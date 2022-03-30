@@ -80,6 +80,7 @@ body{
 }
 
 /*mobile media query*/
+/*모바일 중단점 작게 잡아 다시 작업하기 ex)420*/
 
 @media(max-width:768px){
 
@@ -98,9 +99,9 @@ body{
 	}
 	#banner_wrap{
 		background-image:url(../images/bg3.png);
-		height:100vh;
+		height:60vh;
 		background-size: cover;
-		background-position: 0 0;
+		background-position: 40% 0;
 		background-repeat: no-repeat;
 	 }
 }
@@ -139,14 +140,40 @@ body{
 	width: 70%;
 }
 
+#section1 .right{
+	float: right;
+}
+
 
 /*mobile media query*/
 @media(max-width:768px){
+	#section1{
+		width: 80%;
+		padding: 30vw 0 0;
+
+	}
+
 	#section1 .box{
 		width: 100%;
-		font-size: 8vw;
+		font-size: 10vw;
 		line-height: 10vw;
+		padding:50px 0;
 	}
+
+
+	#section1 .box:nth-child(4){
+		padding:0 0 50px;
+	}
+
+	#section1 .right{
+	
+	}
+
+	.icons{
+
+	}
+
+	
 	.icons img{
 		width: 90%;
 	}
@@ -190,8 +217,8 @@ body{
 	.s2box{
 		width:100%;
 	}
-	#prod{
-
+	#prod img{
+		width: ;
 	}
 }
 
@@ -350,11 +377,11 @@ h1{
 	}
 	
 	.menu{
-		padding-top: 3.5%;
+		padding-top: 5%;
 	}
 	
 	#section4 img{
-		margin-top: 6%;
+		margin-top: 8%;
 	}
 	
 
@@ -493,7 +520,9 @@ h1{
 
 #rights{
 	color:#fff;
-	float:right;
+	clear:both;
+	padding:50px 0 0 15px;
+	font-size: 14px;
 }
 
 
@@ -530,21 +559,18 @@ h1{
 	
 	#fnb{
 		clear: both;
+		margin:0 auto;
+		width: 50%;
 	}
 	#fnb li{
 		clear: both;
-		padding:5px 0;
+		padding:6px 0;
 		text-align: center;
 		width: 100%;
 	}
 	
-	#fnb li a{
-		font-size: 22px;
-	}
-	
-	#rights{
 
-		clear: both;
+	#rights{
 		text-align: center;
 		padding-top: 20px;
 		font-size: 12px;
